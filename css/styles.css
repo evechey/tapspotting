@@ -1,0 +1,173 @@
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 768px;
+}
+ .is-center {
+  text-align: center;
+}
+#searchForm{
+  margin-bottom:40px;
+}
+#locationSearchText {
+  width:100%
+}
+#locationSearchText.useGeo {
+  width:100%;
+}
+#locationSelector {
+	width:100%;
+}
+.locationSelector{
+	padding:1em;
+}
+#locationTable{
+	width:100%;
+}
+.location {
+  color:#2196F3;
+}
+.location:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.beer {
+	color:#07b;
+	border-bottom:1px dotted #ccc;
+	padding:0.75em;
+}
+.beer:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	background-color:#eee;
+}
+.hide {
+	display: none;
+}
+.loadingSection{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.loadingSection.hide{
+  display:none;
+}.load-bar {
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+  height: 6px;
+  background-color: #fdba2c;
+}
+.bar {
+  content: "";
+  display: inline;
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 50%;
+  text-align: center;
+}
+.bar:nth-child(1) {
+  background-color: #da4733;
+  animation: loading 3s linear infinite;
+}
+.bar:nth-child(2) {
+  background-color: #3b78e7;
+  animation: loading 3s linear 1s infinite;
+}
+.bar:nth-child(3) {
+  background-color: #fdba2c;
+  animation: loading 3s linear 2s infinite;
+}
+@keyframes loading {
+    from {left: 50%; width: 0;z-index:100;}
+    33.3333% {left: 0; width: 100%;z-index: 10;}
+    to {left: 0; width: 100%;}
+}
+
+#beerTable .rwd-table {
+  margin: 1em 0;
+  min-width: 300px;
+  width:100%;
+}
+#beerTable .rwd-table tr {
+  border-bottom: 1px solid #eee;
+}
+#beerTable .rwd-table th {
+  display: none;
+}
+#beerTable .rwd-table td {
+  display: block;
+}
+#beerTable .rwd-table td:first-child {
+  padding-top: .5em;
+}
+#beerTable .rwd-table td:last-child {
+  padding-bottom: .5em;
+}
+#beerTable .rwd-table td.alignRight {
+  text-align: left;
+}
+#beerTable .rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  #beerTable .rwd-table td:before {
+    display: none;
+  }
+}
+#beerTable .rwd-table th, #beerTable .rwd-table td {
+  text-align: left;
+}
+#beerTable .rwd-table th.alignRight {
+  text-align: right;
+}
+@media (min-width: 480px) {
+  #beerTable .rwd-table th, #beerTable .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  #beerTable .rwd-table th:first-child, #beerTable .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  #beerTable .rwd-table th:last-child, #beerTable .rwd-table td:last-child {
+    padding-right: 0;
+  }
+}
+
+#beerTable .rwd-table {
+  border-radius: .4em;
+  overflow: hidden;
+}
+#beerTable .rwd-table th, #beerTable .rwd-table td {
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  #beerTable .rwd-table td.alignRight {
+    text-align: right;
+  }
+  #beerTable .rwd-table th, #beerTable .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+@media (min-width: 48em){}
+	.content {
+	  padding: 1em;
+	}
+}
